@@ -1,0 +1,6 @@
+const path = require ('path');
+
+module.exports = {
+    config: path.resolve(__dirname, 'src','shared','database','database.ts'),
+    'migrations-path': path.resolve(__dirname, 'src', 'shared','sequelize', 'migrations')
+}
