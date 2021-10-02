@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "AnotAqui",
   "version": "0.1",
@@ -32,3 +33,32 @@
     "sequelize": "^6.6.5"
   }
 }
+=======
+{
+  "name": "AnotAqui",
+  "version": "0.1",
+  "description": "API AnotAqui",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "CodeLog",
+  "scripts": {
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.10.2",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.13",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.11.0",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1"
+  }
+}
+>>>>>>> a330e3f5a5b68370eb152b3f95e86f52a454211b
