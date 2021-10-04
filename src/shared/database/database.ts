@@ -1,5 +1,5 @@
 module.exports = {
-    dialect: process.env.APP_API_DIALECT,
+    dialect: 'postgres',
     host: process.env.APP_BD_URL,
     port: process.env.APP_BD_PORT,
     username: process.env.APP_BD_USERNAME,
