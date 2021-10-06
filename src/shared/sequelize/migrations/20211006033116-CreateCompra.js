@@ -2,39 +2,50 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('endereco_empresa', { 
+    await queryInterface.createTable('compras', { 
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false
       },
-      id_empresa:{
+      id_conta:{
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: {model: 'empresa', key: 'id'},
+        references: {model: 'conta', key: 'id'},
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
       },
-      estado: {
+      descricao_produtos: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      cidade: {
-        type: Sequelize.STRING,
+      valor_total: {
+        type: Sequelize.FLOAT,
         allowNull: true
       },
-      bairro: {
-        type: Sequelize.STRING,
+      data: {
+        type: Sequelize.DATE,
         allowNull: false,
       },
-      rua: {
+      hora: {
+        type: Sequelize.DATE,
+        allowNull: false,
+      },
+      comprovante: {
         type: Sequelize.STRING,
         allowNull: true,
       },
-      numero: {
+      status: {
         type: Sequelize.STRING,
+        allowNull: true,
+      },
+      id_usuario:{
+        type: Sequelize.INTEGER,
         allowNull: false,
+        references: {model: 'usuario', key: 'id'},
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE',
       },
       created_at:{
         type: Sequelize.DATE,
@@ -48,6 +59,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('endereco_empresa');
+    await queryInterface.dropTable('compras');
   }
 };
