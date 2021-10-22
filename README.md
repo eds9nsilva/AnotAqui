@@ -3,5 +3,5 @@
 então resolvi criar este projeto que pode os ajudar <br>
 > Status do Projeto: Em desenvolvimento :warning:
 
-<h1 align="center"> Tecnologias :computer:	 </h1>
+<h1 align="center"> Tecnologias Backend :computer:	 </h1>
 <p align="justify"> Escrever tecs </p>
